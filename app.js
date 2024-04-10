@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 app.get("/", (req, res) => {
+    console.log('request received');
   res.writeHead(200, {
     "Content-Type": "text/plain",
   });
